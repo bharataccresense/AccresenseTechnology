@@ -1,36 +1,196 @@
 <html>
+
 <head>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/logo/Logo.png">
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
     <title>Digital Marketing Agency | Accresense Technology</title>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
     <div class="nav-bar">
 
         <div class="nav-but">
-              <a href="">Our Work</a>
-              <a href="">Our Services</a>
-              <a href="">About Us</a>
+            <a href="">Our Work</a>
+            <a href="">Our Services</a>
+            <a href="">About Us</a>
         </div>
 
         <div class="git">
-               <button>GET IN TOUCH</button>
+            <button>GET IN TOUCH</button>
         </div>
 
     </div>
 
     <div class="main-logo">
-        <div class="img">
-            <img src="images/hero/heroimg.svg" alt="Accresense Technology">
+        <div class="tilt-container">
+            <img src="images/hero/heroimg.svg" class="tilt-image" alt="Accresense Technology">
 
         </div>
         <div class="typo">
             <h1>ACCRESENSE TECHNOLOGY</h1>
         </div>
     </div>
+    <section class="diag-section">
+        <div class="diag-container">
+            <div class="diag-track" id="diagTrack">
+
+                <div class="card"><img src="images/content/cont1.avif"></div>
+                <div class="card"><img src="images/content/cont2.avif"></div>
+                <div class="card">
+                    <div data-poster-url="https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F681883482cfa6392a50ab643_Britime%20Watch-poster-00001.jpg"
+                        data-video-urls="https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F681883482cfa6392a50ab643_Britime%20Watch-transcode.mp4,https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F681883482cfa6392a50ab643_Britime%20Watch-transcode.webm"
+                        data-autoplay="true" data-loop="true" data-wf-ignore="true"
+                        class="hero-image w-background-video w-background-video-atom"><video
+                            id="2e6286d4-b274-2af1-892b-2b2689f39d2a-video" autoplay="" loop=""
+                            style="background-image:url(&quot;https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F681883482cfa6392a50ab643_Britime%20Watch-poster-00001.jpg&quot;)"
+                            muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+                            <source
+                                src="https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F681883482cfa6392a50ab643_Britime%20Watch-transcode.mp4"
+                                data-wf-ignore="true">
+                            <source
+                                src="https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F681883482cfa6392a50ab643_Britime%20Watch-transcode.webm"
+                                data-wf-ignore="true">
+                        </video></div>
+                </div>
+                <div class="card">
+                    <div data-poster-url="https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F68188d41bbc6fb41c95883d3_Wakad%20Aniamtion-poster-00001.jpg"
+                        data-video-urls="https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F68188d41bbc6fb41c95883d3_Wakad%20Aniamtion-transcode.mp4,https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F68188d41bbc6fb41c95883d3_Wakad%20Aniamtion-transcode.webm"
+                        data-autoplay="true" data-loop="true" data-wf-ignore="true"
+                        class="hero-image w-background-video w-background-video-atom"><video
+                            id="bbf501a0-c64c-692b-b020-f2dcb0eb5d1f-video" autoplay="" loop=""
+                            style="background-image:url(&quot;https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F68188d41bbc6fb41c95883d3_Wakad%20Aniamtion-poster-00001.jpg&quot;)"
+                            muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+                            <source
+                                src="https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F68188d41bbc6fb41c95883d3_Wakad%20Aniamtion-transcode.mp4"
+                                data-wf-ignore="true">
+                            <source
+                                src="https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F68188d41bbc6fb41c95883d3_Wakad%20Aniamtion-transcode.webm"
+                                data-wf-ignore="true">
+                        </video></div>
+                </div>
+                <div class="card">
+                    <div data-poster-url="https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F68188421c3da99dab97e2e7e_Starbucks%20India-poster-00001.jpg"
+                        data-video-urls="https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F68188421c3da99dab97e2e7e_Starbucks%20India-transcode.mp4,https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F68188421c3da99dab97e2e7e_Starbucks%20India-transcode.webm"
+                        data-autoplay="true" data-loop="true" data-wf-ignore="true"
+                        class="hero-image w-background-video w-background-video-atom"><video
+                            id="bbf501a0-c64c-692b-b020-f2dcb0eb5d28-video" autoplay="" loop=""
+                            style="background-image:url(&quot;https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F68188421c3da99dab97e2e7e_Starbucks%20India-poster-00001.jpg&quot;)"
+                            muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+                            <source
+                                src="https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F68188421c3da99dab97e2e7e_Starbucks%20India-transcode.mp4"
+                                data-wf-ignore="true">
+                            <source
+                                src="https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F68188421c3da99dab97e2e7e_Starbucks%20India-transcode.webm"
+                                data-wf-ignore="true">
+                        </video></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="ani-wrapper">
+        <div class="ani-sq" id="aniSq">
+
+            <div class="head">
+                <h1>WE GET THE</h1>
+                <h1 class="job">JOB DONE</h1>
+            </div>
+
+            <div class="min-con">
+                <p>
+                    We're a digital marketing team that specializes in providing end-to-end services to help businesses
+                    get the required task DONE. With a wide range of expertise, including content creation, brand
+                    development, performance marketing, website design and development, graphic design, photography,
+                    videography, and 3D animation, we offer a comprehensive suite of services to meet the diverse needs
+                    of it’s clients under one roof.
+                </p>
+            </div>
+
+            <div class="cir-brand">
+                <h3>OUR</h3>
+                <h3>BRAND</h3>
+                <h3>SOLUTIONS</h3>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="sup">
+        <div class="marquee-wrapper">
+            <div class="marquee-track" id="marqueeTrack">
+
+                <div class="brand-div"><img src="images/brand/b1.avif"></div>
+                <div class="brand-div"><img src="images/brand/b2.avif"></div>
+                <div class="brand-div"><img src="images/brand/b3.avif"></div>
+                <div class="brand-div"><img src="images/brand/b4.webp"></div>
+                <div class="brand-div"><img src="images/brand/b5.avif"></div>
+                <div class="brand-div"><img src="images/brand/b6.avif"></div>
+                <div class="brand-div"><img src="images/brand/b7.avif"></div>
+                <div class="brand-div"><img src="images/brand/b8.avif"></div>
+                <div class="brand-div"><img src="images/brand/b9.avif"></div>
+                <div class="brand-div"><img src="images/brand/b11.png"></div>
+                <div class="brand-div"><img src="images/brand/b12.avif"></div>
+
+            </div>
+        </div>
+    </div>
+    <hr style="margin-left:2rem; margin-right:1rem;">
+
+    <div class="exp">
+        <div class="ex-txt">
+            <h1>OUR EXPERTISE</h1>
+        </div>
+        <div class="ex-con">
+            <div class="h-txt">
+                <h2>VIDEOGRAPHY</h2>
+            </div>
+            <div class="m-con">
+                <p>We create content that connects with your audience - built on strategy, guided by insight, and
+                    designed to deliver across platforms.</p>
+            </div>
+        </div>
+        <div class="ex-con">
+            <div class="h-txt">
+                <h2>WEBSITE DESIGN & DEVELOPMENT</h2>
+            </div>
+            <div class="m-con">
+                <p>We design user experiences that are intuitive, goal-driven, and built around real user behavior -
+                    turning complexity into clarity across web and product journeys.</p>
+            </div>
+        </div>
+        <div class="ex-con">
+            <div class="h-txt">
+                <h2>CGI & ANIMATION</h2>
+            </div>
+            <div class="m-con">
+                <p>We create sharp, visual content through motion and 3D - built to explain, engage, and stand out
+                    across brand and product.</p>
+            </div>
+        </div>
+        <div class="ex-con">
+            <div class="h-txt">
+                <h2>PHOTOGRAPHY</h2>
+            </div>
+            <div class="m-con">
+                <p>We create content that speaks to your audience and solves for their needs - rooted in strategy,
+                    shaped by insight, and built to perform across platforms.</p>
+            </div>
+        </div>
+        <div class="cont-us">
+            <div class="con-u"><h3>CONTACT US</h3></div>
+            <div class="lcst"><p>LET'S CREATE SOMETHING TOGETHER</p></div>
+        </div>
+    </div>
+
 </body>
+<script src="acc.js"></script>
+
 </html>
