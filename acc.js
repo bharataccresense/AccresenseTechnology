@@ -123,7 +123,7 @@ const t2 = gsap.timeline({
   scrollTrigger:{
     trigger:".video-grid-section",
     start:"top top",
-    end:"bottom 70%",
+    end:"bottom bottom",
     scrub:true
   }
 });
@@ -141,7 +141,10 @@ t2.to(".grid-item",{
 
 /* ===== PHASE 3: VIDEO → CENTER GRID ===== */
 t2.to("#videoWrap",{
-  scale:0.28,
+  scale:.31,
+  width:"100vw",
+  y:7,
+  x:-6,
   duration:1,
   ease:"power2.inOut"
 },"<");
