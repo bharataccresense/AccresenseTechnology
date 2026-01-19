@@ -805,3 +805,217 @@ html {
     color:#b0afaf;
     transform: translateY(-.1rem);
 }
+
+@media (max-width:1024px){
+
+  .nav-but a{
+    font-size:1.2rem;
+  }
+
+  .tilt-container{
+    width:14rem;
+  }
+
+  .card{
+    width:20rem;
+    height:28rem;
+  }
+
+  .head h1{
+    font-size:6rem;
+  }
+
+  .min-con p{
+    width:24rem;
+  }
+
+  .grid{
+    gap:.8rem;
+  }
+
+  .ex-con{
+    grid-template-columns:14rem 1fr;
+    height:auto;
+    padding:1rem 0;
+  }
+
+  .h-txt h2{
+    font-size:1rem;
+  }
+
+  .cont-us{
+    width:24rem;
+  }
+
+  .foot-one{
+    padding:0 2rem;
+  }
+
+  .accre h1{
+    font-size:4rem;
+  }
+}
+
+@media (max-width:768px){
+
+  /* ===== NAV ===== */
+  .nav-bar{
+    height:auto;
+    padding:1rem;
+    flex-direction:column;
+    gap:1rem;
+  }
+
+  .nav-but{
+    margin-left:0;
+  }
+
+  .nav-but a{
+    font-size:1.2rem;
+  }
+
+  /* ===== HERO ===== */
+  .tilt-container{
+    width:12rem;
+  }
+
+  .main-logo .typo h1{
+    font-size:1.8rem;
+    text-align:center;
+  }
+
+  /* ===== DIAGONAL ===== */
+  .diag-section{
+    transform:rotate(-8deg);
+  }
+
+  .card{
+    width:18rem;
+    height:24rem;
+  }
+
+  /* ===== ORANGE BOX ===== */
+  .ani-sq{
+    width:90vw;
+    height:auto;
+    margin-top:6rem;
+  }
+
+  .head{
+    margin-top:8rem;
+  }
+
+  .head h1{
+    font-size:3.5rem;
+  }
+
+  .min-con p{
+    width:90%;
+    font-size:.95rem;
+  }
+
+  .cir-brand{
+    width:8rem;
+    height:8rem;
+  }
+
+  /* ===== MARQUEE ===== */
+  .brand-div{
+    height:3.5rem;
+  }
+
+  /* ===== EXPERIENCE ===== */
+  .exp{
+    padding:2rem 1rem;
+  }
+
+  .ex-txt h1{
+    font-size:3rem;
+  }
+
+  .ex-con{
+    grid-template-columns:1fr;
+    height:auto;
+    padding:1.2rem;
+  }
+
+  .h-txt h2{
+    margin-left:0;
+    text-align:center;
+  }
+
+  .m-con p{
+    width:100%;
+    text-align:center;
+  }
+
+  /* ===== CONTACT ===== */
+  .cont-us{
+    width:90%;
+  }
+
+  .lcst{
+    left:9rem;
+  }
+
+  /* ===== VIDEO GRID ===== */
+  .grid{
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:repeat(5,1fr);
+  }
+
+  .grid-item.center{
+    grid-column:1 / -1;
+  }
+
+  /* ===== FOOTER ===== */
+  .main-ft{
+    flex-direction:column;
+    height:auto;
+    gap:2rem;
+  }
+
+  .pre-quick-link{
+    width:100%;
+  }
+
+  .accre{
+    flex-direction:column;
+  }
+
+}
+
+@media (max-width:480px){
+
+  .nav-but a{
+    font-size:1rem;
+  }
+
+  .git button{
+    width:9rem;
+    height:3.5rem;
+  }
+
+  .head h1{
+    font-size:2.8rem;
+  }
+
+  .ex-txt h1{
+    font-size:2.5rem;
+  }
+
+  .tx3 p{
+    width:100%;
+  }
+
+  .accre h1{
+    font-size:3rem;
+  }
+
+  .three-txt,
+  .three-a{
+    flex-direction:column;
+    gap:.2rem;
+  }
+
+}
