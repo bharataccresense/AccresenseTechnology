@@ -85,11 +85,11 @@ tl.to(box, {
   ease: "none"
 })
 
-.to(".head, .min-con, .cir-brand", {
-  opacity: 1,
-  y: 0,
-  ease: "none"
-}, ">-=0.1");
+  .to(".head, .min-con, .cir-brand", {
+    opacity: 1,
+    y: 0,
+    ease: "none"
+  }, ">-=0.1");
 
 const track1 = document.getElementById("marqueeTrack");
 let speed1 = 0.6;
@@ -103,7 +103,7 @@ function animateMarquee() {
   track1.style.transform = `translateX(${offset}px)`;
 
   const firstItem = track1.children[0];
-  const firstItemWidth = firstItem.offsetWidth + rem; // 🔑 1rem gap
+  const firstItemWidth = firstItem.offsetWidth + rem; 
 
   if (Math.abs(offset) >= firstItemWidth) {
     offset += firstItemWidth;
@@ -116,3 +116,46 @@ function animateMarquee() {
 animateMarquee();
 
 
+gsap.registerPlugin(ScrollTrigger);
+
+/* MAIN TIMELINE */
+const t2 = gsap.timeline({
+  scrollTrigger:{
+    trigger:".video-grid-section",
+    start:"top top",
+    end:"bottom 70%",
+    scrub:true
+  }
+});
+
+/* ===== PHASE 1: ONLY VIDEO (0–50%) ===== */
+t2.to({}, {duration:1}); // hold state
+
+/* ===== PHASE 2: GRID APPEARS TOGETHER ===== */
+t2.to(".grid-item",{
+  opacity:1,
+  scale:1,
+  duration:1,
+  ease:"power2.out"
+});
+
+/* ===== PHASE 3: VIDEO → CENTER GRID ===== */
+t2.to("#videoWrap",{
+  scale:0.28,
+  duration:1,
+  ease:"power2.inOut"
+},"<");
+
+/* DOM MOVE (video becomes 5th grid bg) */
+ScrollTrigger.create({
+  trigger:".video-grid-section",
+  start:"top 50%",
+  onEnter:()=>{
+    document.getElementById("centerSlot")
+      .appendChild(document.getElementById("videoWrap"));
+  },
+  onLeaveBack:()=>{
+    document.querySelector(".pin-wrap")
+      .appendChild(document.getElementById("videoWrap"));
+  }
+});
