@@ -55,13 +55,19 @@ html {
     width: 10rem;
     position: relative;
     font-size: 1rem;
-    border: .1rem solid rgba(116, 115, 115, 0.767);
+    border: .1rem solid transparent;
     height: 4rem;
-    background: #f2f2f2;
+    background: #ffff;
     border-radius: 3rem;
     cursor: pointer;
 }
 
+@property --angle
+{
+    syntax:"<angle>";
+    initial-value:90deg;
+    inherits: false;
+}
 .git button::after,.git button::before
 {
     content: "";
@@ -73,14 +79,29 @@ html {
     width:100%;
     translate:-50% -50%;
     height:100%;
-    padding:.2rem;
-    background:conic-gradient(#ffb703 30%,transparent 70% );
+    padding:.25rem;
+    background:conic-gradient(from var(--angle),transparent 70%,#ffb703 );
+    animation:2s spin linear infinite;
 }
 
 .git button::before
 {
-    filter:blur(1.5rem);
+    filter:blur(.5rem);
+    opacity:0.5;
 }
+
+@keyframes spin {
+
+    from{
+        --angle:90deg;
+    }
+    to
+    {
+        --angle:360deg;
+    }
+    
+}
+
 
 
 .main-logo {
