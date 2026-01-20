@@ -62,44 +62,43 @@ html {
     cursor: pointer;
 }
 
-@property --angle
-{
-    syntax:"<angle>";
-    initial-value:90deg;
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 90deg;
     inherits: false;
 }
-.git button::after,.git button::before
-{
+
+.git button::after,
+.git button::before {
     content: "";
     position: absolute;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     border-radius: 3rem;
-    z-index:-1;
-    width:100%;
-    translate:-50% -50%;
-    height:100%;
-    padding:.25rem;
-    background:conic-gradient(from var(--angle),transparent 70%,#ffb703 );
-    animation:2s spin linear infinite;
+    z-index: -1;
+    width: 100%;
+    translate: -50% -50%;
+    height: 100%;
+    padding: .25rem;
+    background: conic-gradient(from var(--angle), transparent 70%, #ffb703);
+    animation: 2s spin linear infinite;
 }
 
-.git button::before
-{
-    filter:blur(.5rem);
-    opacity:0.5;
+.git button::before {
+    filter: blur(.5rem);
+    opacity: 0.5;
 }
 
 @keyframes spin {
 
-    from{
-        --angle:90deg;
+    from {
+        --angle: 90deg;
     }
-    to
-    {
-        --angle:360deg;
+
+    to {
+        --angle: 360deg;
     }
-    
+
 }
 
 
@@ -117,8 +116,60 @@ html {
 .tilt-container {
     background: transparent;
     width: 18rem;
+    position: relative;
     perspective: 62.5rem;
+    transform-style: preserve-3d;
     /* border:.1rem solid black; */
+}
+
+.tilt-box {
+    position: absolute;
+    width: 6rem;
+    height: 3rem;
+    background: #ffb703;
+    opacity: 0;
+    transform:
+    translateZ(-80px)
+    scale(0.5);
+  transition:
+    transform 0.6s cubic-bezier(.19,1,.22,1),
+    opacity 0.4s ease;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* LEFT SIDE */
+.left.one {
+    top: 20%;
+    left: -10rem;
+    background-image:url('images/cont/v1.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left.two {
+    top: 55%;
+    left: -10rem;
+    background-image:url('images/cont/v4.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* RIGHT SIDE */
+.right.three {
+    top: 20%;
+    right: -10rem;
+    background-image:url('images/cont/v2.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right.four {
+    top: 55%;
+    right: -10rem;
+    background-image:url('images/cont/v3.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .tilt-image {
@@ -630,7 +681,7 @@ html {
     margin-top: 2rem;
 }
 
-.tx3{
+.tx3 {
 
     margin-top: 2rem;
 }
@@ -800,222 +851,221 @@ html {
     font-family: 'Satoshi', sans-serif;
 }
 
-.three-a a:hover
-{
-    color:#b0afaf;
+.three-a a:hover {
+    color: #b0afaf;
     transform: translateY(-.1rem);
 }
 
-@media (max-width:1024px){
+@media (max-width:1024px) {
 
-  .nav-but a{
-    font-size:1.2rem;
-  }
+    .nav-but a {
+        font-size: 1.2rem;
+    }
 
-  .tilt-container{
-    width:14rem;
-  }
+    .tilt-container {
+        width: 14rem;
+    }
 
-  .card{
-    width:20rem;
-    height:28rem;
-  }
+    .card {
+        width: 20rem;
+        height: 28rem;
+    }
 
-  .head h1{
-    font-size:6rem;
-  }
+    .head h1 {
+        font-size: 6rem;
+    }
 
-  .min-con p{
-    width:24rem;
-  }
+    .min-con p {
+        width: 24rem;
+    }
 
-  .grid{
-    gap:.8rem;
-  }
+    .grid {
+        gap: .8rem;
+    }
 
-  .ex-con{
-    grid-template-columns:14rem 1fr;
-    height:auto;
-    padding:1rem 0;
-  }
+    .ex-con {
+        grid-template-columns: 14rem 1fr;
+        height: auto;
+        padding: 1rem 0;
+    }
 
-  .h-txt h2{
-    font-size:1rem;
-  }
+    .h-txt h2 {
+        font-size: 1rem;
+    }
 
-  .cont-us{
-    width:24rem;
-  }
+    .cont-us {
+        width: 24rem;
+    }
 
-  .foot-one{
-    padding:0 2rem;
-  }
+    .foot-one {
+        padding: 0 2rem;
+    }
 
-  .accre h1{
-    font-size:4rem;
-  }
+    .accre h1 {
+        font-size: 4rem;
+    }
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-  /* ===== NAV ===== */
-  .nav-bar{
-    height:auto;
-    padding:1rem;
-    flex-direction:column;
-    gap:1rem;
-  }
+    /* ===== NAV ===== */
+    .nav-bar {
+        height: auto;
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
 
-  .nav-but{
-    margin-left:0;
-  }
+    .nav-but {
+        margin-left: 0;
+    }
 
-  .nav-but a{
-    font-size:1.2rem;
-  }
+    .nav-but a {
+        font-size: 1.2rem;
+    }
 
-  /* ===== HERO ===== */
-  .tilt-container{
-    width:12rem;
-  }
+    /* ===== HERO ===== */
+    .tilt-container {
+        width: 12rem;
+    }
 
-  .main-logo .typo h1{
-    font-size:1.8rem;
-    text-align:center;
-  }
+    .main-logo .typo h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
 
-  /* ===== DIAGONAL ===== */
-  .diag-section{
-    transform:rotate(-8deg);
-  }
+    /* ===== DIAGONAL ===== */
+    .diag-section {
+        transform: rotate(-8deg);
+    }
 
-  .card{
-    width:18rem;
-    height:24rem;
-  }
+    .card {
+        width: 18rem;
+        height: 24rem;
+    }
 
-  /* ===== ORANGE BOX ===== */
-  .ani-sq{
-    width:90vw;
-    height:auto;
-    margin-top:6rem;
-  }
+    /* ===== ORANGE BOX ===== */
+    .ani-sq {
+        width: 90vw;
+        height: auto;
+        margin-top: 6rem;
+    }
 
-  .head{
-    margin-top:8rem;
-  }
+    .head {
+        margin-top: 8rem;
+    }
 
-  .head h1{
-    font-size:3.5rem;
-  }
+    .head h1 {
+        font-size: 3.5rem;
+    }
 
-  .min-con p{
-    width:90%;
-    font-size:.95rem;
-  }
+    .min-con p {
+        width: 90%;
+        font-size: .95rem;
+    }
 
-  .cir-brand{
-    width:8rem;
-    height:8rem;
-  }
+    .cir-brand {
+        width: 8rem;
+        height: 8rem;
+    }
 
-  /* ===== MARQUEE ===== */
-  .brand-div{
-    height:3.5rem;
-  }
+    /* ===== MARQUEE ===== */
+    .brand-div {
+        height: 3.5rem;
+    }
 
-  /* ===== EXPERIENCE ===== */
-  .exp{
-    padding:2rem 1rem;
-  }
+    /* ===== EXPERIENCE ===== */
+    .exp {
+        padding: 2rem 1rem;
+    }
 
-  .ex-txt h1{
-    font-size:3rem;
-  }
+    .ex-txt h1 {
+        font-size: 3rem;
+    }
 
-  .ex-con{
-    grid-template-columns:1fr;
-    height:auto;
-    padding:1.2rem;
-  }
+    .ex-con {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 1.2rem;
+    }
 
-  .h-txt h2{
-    margin-left:0;
-    text-align:center;
-  }
+    .h-txt h2 {
+        margin-left: 0;
+        text-align: center;
+    }
 
-  .m-con p{
-    width:100%;
-    text-align:center;
-  }
+    .m-con p {
+        width: 100%;
+        text-align: center;
+    }
 
-  /* ===== CONTACT ===== */
-  .cont-us{
-    width:90%;
-  }
+    /* ===== CONTACT ===== */
+    .cont-us {
+        width: 90%;
+    }
 
-  .lcst{
-    left:9rem;
-  }
+    .lcst {
+        left: 9rem;
+    }
 
-  /* ===== VIDEO GRID ===== */
-  .grid{
-    grid-template-columns:repeat(2,1fr);
-    grid-template-rows:repeat(5,1fr);
-  }
+    /* ===== VIDEO GRID ===== */
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
 
-  .grid-item.center{
-    grid-column:1 / -1;
-  }
+    .grid-item.center {
+        grid-column: 1 / -1;
+    }
 
-  /* ===== FOOTER ===== */
-  .main-ft{
-    flex-direction:column;
-    height:auto;
-    gap:2rem;
-  }
+    /* ===== FOOTER ===== */
+    .main-ft {
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+    }
 
-  .pre-quick-link{
-    width:100%;
-  }
+    .pre-quick-link {
+        width: 100%;
+    }
 
-  .accre{
-    flex-direction:column;
-  }
+    .accre {
+        flex-direction: column;
+    }
 
 }
 
-@media (max-width:480px){
+@media (max-width:480px) {
 
-  .nav-but a{
-    font-size:1rem;
-  }
+    .nav-but a {
+        font-size: 1rem;
+    }
 
-  .git button{
-    width:9rem;
-    height:3.5rem;
-  }
+    .git button {
+        width: 9rem;
+        height: 3.5rem;
+    }
 
-  .head h1{
-    font-size:2.8rem;
-  }
+    .head h1 {
+        font-size: 2.8rem;
+    }
 
-  .ex-txt h1{
-    font-size:2.5rem;
-  }
+    .ex-txt h1 {
+        font-size: 2.5rem;
+    }
 
-  .tx3 p{
-    width:100%;
-  }
+    .tx3 p {
+        width: 100%;
+    }
 
-  .accre h1{
-    font-size:3rem;
-  }
+    .accre h1 {
+        font-size: 3rem;
+    }
 
-  .three-txt,
-  .three-a{
-    flex-direction:column;
-    gap:.2rem;
-  }
+    .three-txt,
+    .three-a {
+        flex-direction: column;
+        gap: .2rem;
+    }
 
 }

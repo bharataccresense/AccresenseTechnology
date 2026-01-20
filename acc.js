@@ -1,30 +1,65 @@
 const container = document.querySelector('.tilt-container');
 const image = document.querySelector('.tilt-image');
 
+const boxes = [
+  document.querySelector('.left.one'),
+  document.querySelector('.left.two'),
+  document.querySelector('.right.three'),
+  document.querySelector('.right.four')
+];
+
+let active = false;
+
 container.addEventListener('mousemove', (e) => {
   const rect = container.getBoundingClientRect();
 
   const x = e.clientX - rect.left;
   const y = e.clientY - rect.top;
 
-  const centerX = rect.width / 2;
-  const centerY = rect.height / 2;
+  const cx = rect.width / 2;
+  const cy = rect.height / 2;
 
-  const rotateX = ((y - centerY) / centerY) * 15;
-  const rotateY = ((x - centerX) / centerX) * -15;
+  const rx = ((y - cy) / cy) * 15;
+  const ry = ((x - cx) / cx) * -15;
 
+  /* IMAGE TILT */
   image.style.transform = `
-    rotateX(${rotateX}deg)
-    rotateY(${rotateY}deg)
-    scale(1)
+    rotateX(${rx}deg)
+    rotateY(${ry}deg)
+    translateZ(20px)
   `;
 
+  /* BOXES APPEAR ONE BY ONE */
+  if (!active) {
+    active = true;
+
+    boxes.forEach((box, i) => {
+      setTimeout(() => {
+        box.style.opacity = "1";
+        box.style.transform = `
+          translateZ(40px)
+          scale(1)
+        `;
+      }, i * 250); // 👈 longer cinematic delay
+    });
+  }
 });
 
 container.addEventListener('mouseleave', () => {
-  image.style.transform = "rotateX(0deg) rotateY(0deg) scale(1)";
-  image.style.boxShadow = "none";
+  active = false;
+
+  image.style.transform =
+    "rotateX(0deg) rotateY(0deg) translateZ(0)";
+
+  boxes.forEach((box, i) => {
+    setTimeout(() => {
+      box.style.opacity = "0";
+      box.style.transform =
+        "translateZ(-80px) scale(0.5)";
+    }, i * 120);
+  });
 });
+
 
 
 
