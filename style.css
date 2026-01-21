@@ -12,6 +12,11 @@ html {
 }
 
 
+.mob-nav,.mob-nav-menu
+{
+    display:none;
+}
+
 
 .nav-bar {
     /* border:.1rem solid black; */
@@ -20,6 +25,15 @@ html {
     align-items: center;
     justify-content: space-between;
     background: #f2f2f28b;
+}
+
+.lap-nav
+{
+
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .nav-but {
@@ -916,6 +930,67 @@ html {
       html
     {
         overflow-x: hidden;
+
+    }
+
+    .lap-nav
+    {
+        display:none;
+    }
+
+    .mob-nav
+    {
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .git{
+        margin-bottom:1.5rem;
+        /* border:.1rem solid black; */
+    }
+    
+    .git button
+    {
+        border:.1rem solid black;
+
+    }
+    
+    .nav-but{
+        /* border:.1rem solid black; */
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom:1.5rem;
+        height:80%;
+    }
+
+    .mob-icon
+    {
+        display:flex ;
+        gap:1rem;
+        font-size:1.5rem;
+        /* border:.1rem solid black; */
+    }
+    
+    .mob-icon i {
+        
+        cursor: pointer;
+    }
+
+    .menu p
+{
+    cursor: pointer;
+}
+    .mob-nav-menu
+    {
+        padding:2rem;
+        height:25rem;
+        display:none;
+        flex-direction: column;
+        border:.1rem solid black;
     }
 
     /* ===== NAV ===== */
@@ -1079,7 +1154,7 @@ html {
 
     .three-txt,
     .three-a {
-        flex-direction: column;
+        flex-direction:column;
         gap: .2rem;
     }
 
