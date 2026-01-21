@@ -18,7 +18,7 @@
 
 <body>
     <div class="nav-bar">
-         
+
         <div class="lap-nav">
 
             <div class="nav-but">
@@ -26,33 +26,37 @@
                 <a href="">Our Services</a>
                 <a href="">About Us</a>
             </div>
-            
+
             <div class="git">
                 <button>GET IN TOUCH</button>
             </div>
         </div>
 
         <div class="mob-nav">
-            <div class="mob-nav-but"><h1>ACCRESENSE</h1></div>
-            <div class="menu" ><p id="menu_but">MENU</p></div>
+            <div class="mob-nav-but">
+                <h1>ACCRESENSE</h1>
+            </div>
+            <div class="menu" id="menu_but">
+                <p>MENU</p>
+            </div>
         </div>
 
     </div>
     <div class="mob-nav-menu" id="menu_box">
-        <div class="nav-but">
-                <a href="">Our Work</a>
-                <a href="">Our Services</a>
-                <a href="">About Us</a>
-            </div>
-            
-            <div class="git">
-                <button>GET IN TOUCH</button>
-            </div>
+        <div class="nav-but ln">
+            <a href="">Our Work</a>
+            <a href="">Our Services</a>
+            <a href="">About Us</a>
+        </div>
 
-            <div class="mob-icon">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-            </div>
+        <div class="git ln">
+            <button>GET IN TOUCH</button>
+        </div>
+
+        <div class="mob-icon ln">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
     </div>
 
 
@@ -408,5 +412,21 @@
 
 </body>
 <script src="acc.js"></script>
+<script>
+    menubutt = document.getElementById('menu_but');
+    menubox = document.getElementById('menu_box');
+
+    let clicked=false;
+
+    menubutt.addEventListener("click", () => {
+         clicked=!clicked;
+        if (clicked) {
+            menubox.style.display="flex";
+        } else {
+            
+            menubox.style.display="none";
+        }
+    });
+</script>
 
 </html>

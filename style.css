@@ -12,7 +12,7 @@ html {
 }
 
 
-.mob-nav,.mob-nav-menu
+.mob-nav,.mob-nav-menu,.ln
 {
     display:none;
 }
@@ -122,6 +122,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index:1;
     flex-direction: column;
     padding: 2rem;
     background: transparent;
@@ -949,6 +951,7 @@ html {
 
     .git{
         margin-bottom:1.5rem;
+        display: flex;
         /* border:.1rem solid black; */
     }
     
@@ -984,13 +987,19 @@ html {
 {
     cursor: pointer;
 }
+
+
     .mob-nav-menu
     {
         padding:2rem;
         height:25rem;
+        width:100%;
+        position:absolute;
+        background:#fff;
+        z-index:1000;
         display:none;
         flex-direction: column;
-        border:.1rem solid black;
+        /* border:.1rem solid black; */
     }
 
     /* ===== NAV ===== */
