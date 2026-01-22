@@ -1104,12 +1104,12 @@ html {
 
     /* ===== VIDEO GRID ===== */
     .grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 
     .grid-item.center {
-        grid-column: 1 / -1;
+        grid-column: 3 /2;
     }
 
     /* ===== FOOTER ===== */
