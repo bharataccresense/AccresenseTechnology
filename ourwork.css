@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.web-up {
+    /* border:.1rem solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 1.2rem;
+    height: fit-content;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.web-smart {
+    background: rgb(231, 230, 230);
+    /* border:.1rem solid black; */
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+    border-radius: .2rem;
+}
+
+.dot {
+    /* border:.1rem solid black; */
+    width: .4rem;
+    height: .4rem;
+    border-radius: 50%;
+    background: #ffb703;
+}
+
+.web-smart p {
+
+    font-family: 'Satoshi', sans-serif;
+    font-size: .8rem;
+}
+
+.web-accre h1 {
+    /* border:.1rem solid black; */
+    font-family: 'Anton', Arial, sans-serif;
+    font-size: 3rem;
+    
+}
+
+
+.web-main {
+    height: fit-content;
+    margin-bottom: 4rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+    flex-wrap: wrap;
+    /* border:.1rem solid black; */
+}
+
+.web-box {
+    /* border: .1rem solid black; */
+    width: 33rem;
+    height: 20rem;
+    position: relative;
+}
+
+.web-box video
+{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.web-p 
+{
+    position: absolute;
+    bottom:2%;
+    left:2%;
+}
+
+.web-p p
+{
+    color:#fff;
+}
+
+.web-cont {
+    height: fit-content;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    /* border: .1rem solid black; */
+    background: #f0eee9;
+
+}
+
+.web-cont-box {
+    /* border: .1rem solid black; */
+    width: 34rem;
+    height: 16rem;
+
+}
+
+.web-cont-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-origin: center;
+}
+
+.web-cont-box h2 {
+    font-family: 'Anton', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 2.8rem;
+
+}
+
+.web-cont-box p {
+
+    
+    font-family: 'Satoshi', sans-serif;
+    font-size:.9rem;
+    font-weight: lighter;
+}
