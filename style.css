@@ -11,6 +11,13 @@ html {
 
 }
 
+#highlight, #mob-highlight
+{
+    border-bottom:.2rem solid #333;
+    padding-bottom:.2rem;
+    width:fit-content;
+}
+
 
 .mob-nav,.mob-nav-menu,.ln
 {
@@ -52,9 +59,9 @@ html {
     /* border:.1rem solid black; */
 }
 
-.nav-bar a:hover {
+/* .nav-bar a:hover {
     text-decoration: underline;
-}
+} */
 
 .git {
     margin-right: 1.5rem;
@@ -75,6 +82,33 @@ html {
     border-radius: 3rem;
     cursor: pointer;
 }
+
+/* .box-get-touch
+{
+    border:.1rem solid black;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    top:25%;
+    width:35rem;
+    height:25rem;
+    z-index:2;
+    background:#fff;
+}
+
+.box-get-touch::after,.box-get-touch::before
+{
+    content:"";
+    border:.1rem solid black;
+    width:100%;
+    position: absolute;
+    height:100%;
+    z-index:-1;
+    opacity:.8;
+    background:grey;
+    filter: blur(3rem);
+} */
 
 @property --angle {
     syntax: "<angle>";

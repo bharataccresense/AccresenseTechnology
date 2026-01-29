@@ -1,0 +1,161 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/logo/Logo.png">
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <title>Accresense Technology - About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="nav-bar">
+
+        <div class="lap-nav">
+
+            <div class="nav-but">
+                <a href="ourwork.html#website">Our Work</a>
+                <a href="">Our Services</a>
+                <a href="about.html" id="highlight">About Us</a>
+            </div>
+
+            <div class="git">
+                <button>GET IN TOUCH</button>
+            </div>
+        </div>
+
+        <div class="mob-nav">
+            <div class="mob-nav-but">
+                <h1>ACCRESENSE</h1>
+            </div>
+            <div class="menu" id="menu_but">
+                <p>MENU</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="mob-nav-menu" id="menu_box">
+        <div class="nav-but ln">
+            <a href="ourwork.html#website">Our Work</a>
+            <a href="">Our Services</a>
+            <a href="about.html" id="mob-highlight">About Us</a>
+        </div>
+
+        <div class="git ln">
+            <button>GET IN TOUCH</button>
+        </div>
+
+        <div class="mob-icon ln">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </div>
+
+
+    
+
+
+    <div class="foot-one">
+        <div class="foot-txt">
+            <div class="tx1">
+                <h1>READY TO BRING YOUR VISION TO LIFE?</h1>
+                <h1>CONTACT ACCRESENSE TODAY!</h1>
+            </div>
+            <div class="tx2">
+                <div class="ge1">
+                    <div class="tt_">
+                        <p>Get in touch</p>
+                    </div>
+                    <div class="ar"><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+                <div class="ge2"></div>
+            </div>
+            <div class="tx3">
+                <p>We’d love to hear from you! Whether you have questions, feedback, or a project idea, feel free to
+                    reach out. Our team is committed to responding within 24 hours to assist you promptly.</p>
+            </div>
+        </div>
+    </div>
+    <div class="foot-two">
+        <div class="main-ft">
+
+            <div class="pre-foot">
+                <div class="pre-txt">
+                    <p>A creative agency specializing in branding, web development, motion graphics, and art direction
+                        to
+                        bring ideas to life.</p>
+                </div>
+                <div class="prelink">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="pre-quick-link">
+                <div class="quick-link">
+                    <h3>QUICK LINKS</h3>
+                    <a href="">HOME</a>
+                    <a href="">ABOUT US</a>
+                    <a href="">CONTACT</a>
+                    <a href="">OUR SERVICES</a>
+                </div>
+                <div class="xplo">
+                    <h3>EXPLORE</h3>
+                    <a href="">OUR PHOTOGRAPHY</a>
+                    <a href="">OUR VIDEOGRAPHY</a>
+                    <a href="">WEBSITE DEVELOPMENT</a>
+                    <a href="">3D ANIMATION AND CGI</a>
+                </div>
+            </div>
+        </div>
+        <div class="accre">
+            <h1>WE</h1>
+            <h1>ARE</h1>
+            <h1>ACCRESENSE TECHNOLOGY</h1>
+        </div>
+    </div>
+
+    </div>
+    <footer>
+        <div class="foot-three">
+            <div class="three-txt">
+                <p>Copyright 2026</p>
+                <p style="color:#fff;">ACCRESENSE TECHNOLOGY</p>
+            </div>
+            <div class="three-a">
+                <a href="">Privacy Policy</a>
+                <p>|</p>
+                <a href="">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+<script src="acc.js"></script>
+<script>
+    menubutt = document.getElementById('menu_but');
+    menubox = document.getElementById('menu_box');
+
+    let clicked=false;
+
+    menubutt.addEventListener("click", () => {
+         clicked=!clicked;
+        if (clicked) {
+            menubox.style.display="flex";
+        } else {
+            
+            menubox.style.display="none";
+        }
+    });
+</script>
+
+</html>
