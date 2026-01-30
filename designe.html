@@ -1,32 +1,33 @@
 <html>
 
 <head>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="social.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/logo/Logo.png">
     <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <link rel="icon" type="image/png" href="images/logo/Logo.png">
+    <title>Accresense Technology - Social Media</title>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-
-    <title>Accresense Technology - About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 
 <body>
+
     <div class="nav-bar">
 
         <div class="lap-nav">
 
             <div class="nav-but">
-                <a href="ourwork.html">Our Work</a>
-                <a href="ourservices.html">Our Services</a>
-                <a href="about.html" id="highlight">About Us</a>
+                <a href="index.html">HOME</a>
+                <a href="ourwork.html">WEBSITE</a>
+                <a href="designe.html" id="highlight">DESIGNS</a>
+                <a href="socialmedia.html">SOCIAL MEDIA</a>
             </div>
-
+            
             <div class="git">
                 <button>GET IN TOUCH</button>
             </div>
@@ -44,9 +45,10 @@
     </div>
     <div class="mob-nav-menu" id="menu_box">
         <div class="nav-but ln">
-            <a href="ourwork.html">Our Work</a>
-            <a href="ourservices.html">Our Services</a>
-            <a href="about.html" id="mob-highlight">About Us</a>
+            <a href="index.html">HOME</a>
+            <a href="ourwork.html">WEBSITE</a>
+            <a href="designe.html" id="mob-highlight">DESIGNES</a>
+            <a href="socialmedia.html">SCOIAL MEDIA</a>
         </div>
 
         <div class="git ln">
@@ -59,8 +61,6 @@
         </div>
     </div>
 
-
-    
 
 
     <div class="foot-one">
@@ -100,7 +100,7 @@
             <div class="pre-quick-link">
                 <div class="quick-link">
                     <h3>QUICK LINKS</h3>
-                    <a href="">HOME</a>
+                    <a href="index.html">HOME</a>
                     <a href="">ABOUT US</a>
                     <a href="">CONTACT</a>
                     <a href="">OUR SERVICES</a>
@@ -136,24 +136,22 @@
         </div>
     </footer>
 
-
-
-
 </body>
+
 <script src="acc.js"></script>
 <script>
     menubutt = document.getElementById('menu_but');
     menubox = document.getElementById('menu_box');
 
-    let clicked=false;
+    let clicked = false;
 
     menubutt.addEventListener("click", () => {
-         clicked=!clicked;
+        clicked = !clicked;
         if (clicked) {
-            menubox.style.display="flex";
+            menubox.style.display = "flex";
         } else {
-            
-            menubox.style.display="none";
+
+            menubox.style.display = "none";
         }
     });
 </script>
