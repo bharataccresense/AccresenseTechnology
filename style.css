@@ -970,6 +970,18 @@ html {
     body {
 
         -webkit-tap-highlight-color: transparent;
+        -webkit-focus-ring-color: transparent;
+        outline: none;
+    }
+
+    a,
+    img,
+    button,
+    h1,
+    h2,
+    button,
+    div {
+        -webkit-tap-highlight-color: transparent;
     }
 
     .lap-nav {
@@ -1168,6 +1180,18 @@ html {
 
     body {
 
+        -webkit-tap-highlight-color: transparent;
+        -webkit-focus-ring-color: transparent;
+        outline: none;
+    }
+
+    a,
+    img,
+    button,
+    h1,
+    h2,
+    button,
+    div {
         -webkit-tap-highlight-color: transparent;
     }
 
