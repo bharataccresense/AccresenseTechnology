@@ -961,18 +961,18 @@ html {
 }
 
 @media (max-width:768px) {
+    
+    *{
 
+        -webkit-tap-highlight-color: transparent;
+        -webkit-focus-ring-color: transparent;
+        outline: none;
+    } 
     html {
         overflow-x: hidden;
 
     }
 
-    body {
-
-        -webkit-tap-highlight-color: transparent;
-        -webkit-focus-ring-color: transparent;
-        outline: none;
-    }
 
     a,
     img,
@@ -1173,16 +1173,16 @@ html {
 }
 
 @media (max-width:480px) {
+    
+        *{
+    
+            -webkit-tap-highlight-color: transparent;
+            -webkit-focus-ring-color: transparent;
+            outline: none;
+        }
 
     html {
         overflow-x: hidden;
-    }
-
-    body {
-
-        -webkit-tap-highlight-color: transparent;
-        -webkit-focus-ring-color: transparent;
-        outline: none;
     }
 
     a,
