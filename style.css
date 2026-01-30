@@ -502,10 +502,11 @@ html {
 
 }
 
-.layer1 video,.layer2 video,.layer3 video
-{
-    width:100%;
-    height:100%;
+.layer1 video,
+.layer2 video,
+.layer3 video {
+    width: 100%;
+    height: 100%;
     border-radius: .5rem;
     object-fit: cover;
 }
@@ -996,7 +997,7 @@ html {
         -webkit-tap-highlight-color: transparent;
     }
 
-    .lap-nav {
+    .lap-nav,.orange {
         display: none;
     }
 
@@ -1136,6 +1137,11 @@ html {
         grid-template-columns: 1fr;
         height: auto;
         padding: 1.2rem;
+    }
+
+    .video-grid-section
+    {
+        margin-bottom:4rem;
     }
 
     .h-txt h2 {
