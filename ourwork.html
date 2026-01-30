@@ -33,10 +33,10 @@
                 <button>GET IN TOUCH</button>
             </div>
         </div>
-        
+
         <div class="mob-nav">
             <div class="mob-nav-but">
-                <h1>ACCRESENSE</h1>
+                <h1 id="logoText">ACCRESENSE</h1>
             </div>
             <div class="menu" id="menu_but">
                 <p>MENU</p>
@@ -86,7 +86,9 @@
                     src="https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F685027f500cba19d22b328c5_e9267b8e087bacdd1097880063fb4be2-transcode.mp4"
                     type="video/mp4">
             </video>
-            <div class="web-p"><p>Oishi Cafe</p></div>
+            <div class="web-p">
+                <p>Oishi Cafe</p>
+            </div>
         </div>
         <div class="web-box">
             <video autoplay muted loop playsinline>
@@ -94,7 +96,9 @@
                     src="https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F685027f500cba19d22b328c5_e9267b8e087bacdd1097880063fb4be2-transcode.mp4"
                     type="video/mp4">
             </video>
-            <div class="web-p"><p>Art by Seema Sethi</p></div>
+            <div class="web-p">
+                <p>Art by Seema Sethi</p>
+            </div>
         </div>
         <div class="web-box">
             <video autoplay muted loop playsinline>
@@ -102,7 +106,9 @@
                     src="https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F685027f500cba19d22b328c5_e9267b8e087bacdd1097880063fb4be2-transcode.mp4"
                     type="video/mp4">
             </video>
-            <div class="web-p"><p>Slice heaven</p></div>
+            <div class="web-p">
+                <p>Slice heaven</p>
+            </div>
         </div>
         <div class="web-box">
             <video autoplay muted loop playsinline>
@@ -110,7 +116,9 @@
                     src="https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F685027f500cba19d22b328c5_e9267b8e087bacdd1097880063fb4be2-transcode.mp4"
                     type="video/mp4">
             </video>
-            <div class="web-p"><p>Wesite1</p></div>
+            <div class="web-p">
+                <p>Wesite1</p>
+            </div>
         </div>
         <div class="web-box">
             <video autoplay muted loop playsinline>
@@ -118,7 +126,9 @@
                     src="https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F685027f500cba19d22b328c5_e9267b8e087bacdd1097880063fb4be2-transcode.mp4"
                     type="video/mp4">
             </video>
-            <div class="web-p"><p>Wesite1</p></div>
+            <div class="web-p">
+                <p>Wesite1</p>
+            </div>
         </div>
         <div class="web-box">
             <video autoplay muted loop playsinline>
@@ -126,7 +136,9 @@
                     src="https://cdn.prod.website-files.com/67baec8acda347f8a7b9e834%2F685027f500cba19d22b328c5_e9267b8e087bacdd1097880063fb4be2-transcode.mp4"
                     type="video/mp4">
             </video>
-            <div class="web-p"><p>Wesite1</p></div>
+            <div class="web-p">
+                <p>Wesite1</p>
+            </div>
         </div>
 
     </div>
@@ -241,6 +253,7 @@
     </footer>
 
 </body>
+
 <script src="acc.js"></script>
 <script>
     menubutt = document.getElementById('menu_but');
@@ -257,6 +270,19 @@
             menubox.style.display = "none";
         }
     });
+
+
+
+
+    const text = document.getElementById("logoText");
+
+    const colors = ["#ffb703", "#8ecae6", "#e63946", "#8338ec"];
+    let index = 0;
+
+    setInterval(() => {
+        text.style.color = colors[index];
+        index = (index + 1) % colors.length;
+    }, 2000);
 </script>
 
 </html>

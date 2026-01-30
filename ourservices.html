@@ -18,9 +18,9 @@
 
 <body>
     <div class="nav-bar">
-        
+
         <div class="lap-nav">
-            
+
             <div class="nav-but">
                 <a href="index.html">Home</a>
                 <a href="ourwork.html">Our Work</a>
@@ -35,7 +35,7 @@
 
         <div class="mob-nav">
             <div class="mob-nav-but">
-                <h1>ACCRESENSE</h1>
+                <h1 id="logoText">ACCRESENSE</h1>
             </div>
             <div class="menu" id="menu_but">
                 <p>MENU</p>
@@ -73,7 +73,7 @@
     </div> -->
 
 
-    
+
 
     <div class="foot-one">
         <div class="foot-txt">
@@ -157,17 +157,30 @@
     menubutt = document.getElementById('menu_but');
     menubox = document.getElementById('menu_box');
 
-    let clicked=false;
+    let clicked = false;
 
     menubutt.addEventListener("click", () => {
-         clicked=!clicked;
+        clicked = !clicked;
         if (clicked) {
-            menubox.style.display="flex";
+            menubox.style.display = "flex";
         } else {
-            
-            menubox.style.display="none";
+
+            menubox.style.display = "none";
         }
     });
+
+
+
+
+    const text = document.getElementById("logoText");
+
+    const colors = ["#ffb703", "#8ecae6", "#e63946", "#8338ec"];
+    let index = 0;
+
+    setInterval(() => {
+        text.style.color = colors[index];
+        index = (index + 1) % colors.length;
+    }, 2000);
 </script>
 
 </html>

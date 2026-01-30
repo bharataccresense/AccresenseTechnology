@@ -35,7 +35,7 @@
 
         <div class="mob-nav">
             <div class="mob-nav-but">
-                <h1>ACCRESENSE</h1>
+                <h1 id="logoText">ACCRESENSE</h1>
             </div>
             <div class="menu" id="menu_but">
                 <p>MENU</p>
@@ -484,6 +484,18 @@
             menubox.style.display = "none";
         }
     });
+
+
+
+    const text = document.getElementById("logoText");
+
+    const colors = ["#ffb703", "#8ecae6", "#e63946", "#8338ec"];
+    let index = 0;
+
+    setInterval(() => {
+        text.style.color = colors[index];
+        index = (index + 1) % colors.length;
+    }, 2000);
 </script>
 
 </html>
