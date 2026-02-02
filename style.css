@@ -404,7 +404,7 @@ html {
 
 .brand-div {
     width: fit-content;
-    height: 5rem;
+    height:8rem;
     /* border:.1rem solid black; */
     flex-shrink: 0;
     display: flex;
