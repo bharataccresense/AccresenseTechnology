@@ -104,6 +104,15 @@
 
 }
 
+.web-our-main
+{
+   /* border:.1rem solid black; */
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   gap:2.5rem;
+}
+
 .web-cont-box {
     /* border: .1rem solid black; */
     width: 34rem;
@@ -201,10 +210,19 @@
     font-size: 0.8rem;
   }
 
-  .web-cont {
+  .web-our-main {
     padding: 1.5rem 1rem;
-    gap: 1.5rem;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
     flex-direction: column;
+  }
+  
+  .m-one
+  {
+    
+    flex-direction:column-reverse;
   }
 
   .web-cont-box {
