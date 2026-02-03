@@ -141,14 +141,15 @@
 
 .web-cont-box {
   /* border: .1rem solid black; */
-  width: 34rem;
+  width:100%;
   height: 16rem;
-
+  
 }
 
 .web-cont-box video {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
+  aspect-ratio:2/3;
   object-fit: cover;
   background-origin: center;
 }

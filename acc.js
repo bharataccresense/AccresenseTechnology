@@ -130,18 +130,19 @@ const track1 = document.getElementById("marqueeTrack");
 let speed1 = 0.6;
 let offset = 0;
 
-// 1rem ko px me convert karo
+// 1rem to px
 const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
 
 function animateMarquee() {
   offset -= speed1;
-  track1.style.transform = `translateX(${offset}px)`;
+
+  track1.style.transform = `translate3d(${offset}px, 0, 0)`;
 
   const firstItem = track1.children[0];
-  const firstItemWidth = firstItem.offsetWidth + rem; 
+  const itemWidth = firstItem.getBoundingClientRect().width + rem;
 
-  if (Math.abs(offset) >= firstItemWidth) {
-    offset += firstItemWidth;
+  if (Math.abs(offset) >= itemWidth) {
+    offset += itemWidth;
     track1.appendChild(firstItem);
   }
 
@@ -149,6 +150,7 @@ function animateMarquee() {
 }
 
 animateMarquee();
+
 
 
 gsap.registerPlugin(ScrollTrigger);
