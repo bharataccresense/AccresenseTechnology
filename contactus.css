@@ -8,24 +8,114 @@
 
 .main-form
 {
-    border:.1rem solid black;
+    /* border:.1rem solid black; */
     margin-bottom:4rem;
     height:max-content;
-    padding:4rem;
+    padding:2.5rem;
+}
+
+.main-form h1{
+
+    font-family: 'Anton', Arial, sans-serif;
+    font-size:2.5rem;
+    font-weight: normal;
 }
 
 .form{
+    
+    /* border:.1rem solid black; */
+    width:auto;
+    height:auto;
+    margin-top:1.5rem;
+}
 
-    border:.1rem solid black;
-    width:fit-content;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: fit-content;
+._form-div
+{
+    /* border:.1rem solid black; */
+    display: flex;
+    gap:1rem;
+    width:100%;
+    flex-direction: column;
+}
+
+.pair-div
+{
+    gap:1.5rem;
+    /* border:.1rem solid black; */
+    display:flex;
+}
+
+.in-div{
+    
+    display:flex;
+    width:100%;
+    gap:.5rem;
+    flex-direction: column;
+    /* border:.1rem solid black; */
+    
+    
+}
+
+.in-div label,.into-div label
+{
+    font-family: 'Anton', Arial, sans-serif;
+    font-size:1.2rem;
 
 }
 
-.form input
+.into-div
 {
-    width:25rem;
-    height:2.5rem;
+    display: flex;
+    gap:.5rem;
+    margin-top:1rem;
+    flex-direction: column;
+}
+
+.into-div textarea
+{
+    width:100%;
+    padding-left:.5rem;
+    padding-top:.5rem;
+    font-size:.9rem;
+    
+}
+
+.in-div input,.in-div select 
+{
+    width:100%;
+    /* border:.1rem solid black; */
+    height:3rem;
+    cursor: pointer;
+    font-size:.9rem;
+    padding-left:.5rem;
+}
+
+.form input:focus,.form select:focus,.into-div textarea:focus{
+
+    outline:none;
+    border:.1rem solid #333;
+}
+
+.in-sub
+{
+    /* border:.1rem solid black; */
+    width:fit-content;
+    margin-top:1rem;
+}
+
+.in-sub input{
+    
+    width:6rem;
+    height:3rem;
+    cursor: pointer;
+    background:#333;
+    color:#fff;
+    border-radius:.3rem;
+}
+
+.in-sub input:hover{
+    
+    background:#fff;
+    color:#333;
+
 }
