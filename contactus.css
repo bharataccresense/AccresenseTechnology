@@ -209,6 +209,11 @@
           padding:0 2rem;
     }
 
+    .in-div label
+    {
+        font-size:1rem;
+    }
+
     ._tx3
     {
         grid-template-columns: repeat(2 , 1fr);
@@ -226,5 +231,16 @@
     ._tx3
     {
         grid-template-columns: repeat(1 , 1fr);
+        
+    }
+
+    .pair-div
+    {
+        flex-direction: column;
+    }
+
+    .tx3-div
+    {
+        height:12rem;
     }
 }
