@@ -239,6 +239,14 @@ html {
     margin-top: 1.5rem;
 }
 
+.typo h1{
+
+    font-family: 'Anton', Arial, sans-serif;
+    font-size:1.8rem;
+    font-weight: normal;
+
+}
+
 /* SECTION + ANGLE */
 .diag-section {
     padding-top: 1rem;
@@ -749,10 +757,13 @@ html {
     margin-top: 2rem;
 }
 
-.tt_ p,
+.tt_ a,
 .tx3 p {
     font-family: 'Satoshi', sans-serif;
     font-size: 1rem;
+    text-decoration:none;
+    color:#333;
+
 
 }
 
