@@ -200,4 +200,9 @@ ScrollTrigger.create({
   }
 });
 
+function clgit()
+{
+   window.location.href="getintouch.html";
+}
+
 
