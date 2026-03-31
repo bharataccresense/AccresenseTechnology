@@ -424,7 +424,7 @@ html {
 .marquee-track {
     display: flex;
     will-change: transform;
-    gap:1.5rem;
+    gap:2rem;
 }
 
 .brand-div {
