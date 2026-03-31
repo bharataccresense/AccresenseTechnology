@@ -424,7 +424,7 @@ html {
 .marquee-track {
     display: flex;
     will-change: transform;
-    gap:2rem;
+    gap:1.5rem;
 }
 
 .brand-div {
@@ -432,9 +432,11 @@ html {
     height: 5rem;
     /* border:.1rem solid black; */
     flex-shrink: 0;
+    font-size: normal;
     display: flex;
     align-items: center;
     justify-content: center;
+    aspect-ratio:4/3;
 }
 
 .brand-div img {
